@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#09070f">
+  <title>Credits - Galactic Launcher</title>
+  <style>
+    :root{--bg:#09070f;--panel:rgba(18,13,30,.84);--border:rgba(193,144,255,.14);--border-strong:rgba(212,173,255,.28);--text:#f7f2ff;--muted:#b19cc9;--purple:#b16cff;--shadow:0 18px 60px rgba(0,0,0,.42);--radius:18px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;min-height:100vh;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top left,rgba(177,108,255,.16),transparent 28%),radial-gradient(circle at 90% 8%,rgba(255,122,217,.12),transparent 24%),linear-gradient(180deg,#0a0811 0%,#09070f 42%,#0b0813 100%);overflow-x:hidden;-webkit-font-smoothing:antialiased} a{color:inherit}
+    .fx,.fx::before,.fx::after{position:fixed;inset:0;pointer-events:none;content:""}.fx{z-index:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:38px 38px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.75),transparent 95%)}
+    .fx::before{width:680px;height:680px;left:50%;top:120px;transform:translateX(-50%);border-radius:50%;background:repeating-conic-gradient(from 0deg,rgba(177,108,255,.18) 0deg 12deg,rgba(255,122,217,.12) 12deg 24deg,rgba(0,0,0,0) 24deg 36deg);filter:blur(2px);opacity:.72;animation:spinSpiral 22s linear infinite;mask-image:radial-gradient(circle at center,transparent 0 11%,rgba(0,0,0,.95) 26%,rgba(0,0,0,.95) 46%,transparent 74%)}
+    .fx::after{background:radial-gradient(circle at 50% 200px,rgba(177,108,255,.14),transparent 26%),radial-gradient(circle at 18% 24%,rgba(141,70,242,.16),transparent 22%),radial-gradient(circle at 86% 18%,rgba(255,122,217,.10),transparent 18%);filter:blur(28px);animation:floatGlow 10s ease-in-out infinite}
+    .shell{width:min(1000px,calc(100% - 32px));margin:0 auto;position:relative;z-index:1} header{position:sticky;top:0;z-index:50;backdrop-filter:blur(16px);background:rgba(9,7,15,.72);border-bottom:1px solid rgba(193,144,255,.08)} .topbar{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{text-decoration:none;font-weight:800;letter-spacing:-.03em}.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-top:1px}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.035);color:var(--text);text-decoration:none;font-size:14px;font-weight:750;transition:.18s ease;box-shadow:inset 0 1px 0 rgba(255,255,255,.04)} .button:hover{transform:translateY(-2px);border-color:var(--border-strong);background:rgba(255,255,255,.06);box-shadow:0 14px 30px rgba(0,0,0,.24)}
+    main{padding:88px 0 60px}.eyebrow{display:inline-flex;padding:7px 11px;border-radius:999px;background:rgba(177,108,255,.10);border:1px solid rgba(177,108,255,.18);color:#e2c2ff;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase} h1{margin:16px 0 0;font-size:clamp(44px,7vw,78px);line-height:.95;letter-spacing:-.065em}.lead{margin:18px 0 0;color:var(--muted);font-size:16px;line-height:1.7;max-width:650px}
+    .card{margin-top:34px;background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);backdrop-filter:blur(12px);padding:30px;animation:cardUp .8s cubic-bezier(.22,.85,.32,1) both}.card h2{margin:0 0 10px;font-size:30px;letter-spacing:-.04em}.card p{margin:0;color:var(--muted);font-size:16px;line-height:1.75}.rainbow-name{font-weight:900;background:linear-gradient(90deg,#ff6767,#ffb36b,#fff36d,#67ff92,#6bd4ff,#8f86ff,#ff79ea,#ff6767);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rainbowShift 4s linear infinite,nameFade 2.4s ease-in-out infinite}
+    footer{padding:26px 0 34px;color:#8d7aaa;font-size:12px;text-align:center}
+    @keyframes spinSpiral{from{transform:translateX(-50%) rotate(0)}to{transform:translateX(-50%) rotate(360deg)}} @keyframes floatGlow{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-18px,0)}} @keyframes cardUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}} @keyframes rainbowShift{0%{background-position:0% 50%}100%{background-position:300% 50%}} @keyframes nameFade{0%,100%{opacity:1}50%{opacity:.55}}
+    @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}} @media(max-width:720px){.topbar{padding:10px 0;align-items:flex-start;flex-direction:column}.button{width:100%}.fx::before{width:520px;height:520px;top:170px}}
+
+
+    /* Extra motion layer — added without changing page copy/layout */
+    .scroll-progress{
+      position:fixed;top:0;left:0;height:2px;width:0;z-index:100;
+      background:linear-gradient(90deg,#8d46f2,#d59eff,#ff7ad9);
+      box-shadow:0 0 16px rgba(177,108,255,.75);
+      transition:width .08s linear;
+    }
+    .particles{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+    .particle{
+      position:absolute;bottom:-40px;width:4px;height:4px;border-radius:50%;
+      background:#c58cff;opacity:0;
+      box-shadow:0 0 14px rgba(177,108,255,.8);
+      animation:particleRise var(--dur) linear var(--delay) infinite;
+    }
+    .particle:nth-child(3n){background:#ff7ad9;box-shadow:0 0 15px rgba(255,122,217,.7)}
+    .particle:nth-child(4n){width:2px;height:2px;opacity:.6}
+    .cursor-glow{
+      position:fixed;left:0;top:0;width:360px;height:360px;border-radius:50%;z-index:0;
+      pointer-events:none;opacity:.24;transform:translate(-50%,-50%);
+      background:radial-gradient(circle,rgba(177,108,255,.30) 0%,rgba(141,70,242,.10) 35%,transparent 70%);
+      filter:blur(20px);transition:opacity .25s ease;
+    }
+    body:not(:hover) .cursor-glow{opacity:0}
+
+    header{animation:headerDrop .65s cubic-bezier(.22,.85,.32,1) both}
+    .brand-text,.brand{position:relative}
+    .brand-text::after,.brand::after{
+      content:"";position:absolute;left:0;bottom:-8px;height:2px;width:0;
+      background:linear-gradient(90deg,#8d46f2,#ff7ad9);border-radius:99px;
+      box-shadow:0 0 12px rgba(177,108,255,.5);transition:width .35s ease;
+    }
+    .brand:hover .brand-text::after,.brand:hover::after{width:100%}
+
+    h1{position:relative;animation:titleIn .9s .08s cubic-bezier(.22,.85,.32,1) both}
+    h1::after{
+      content:"";position:absolute;left:0;bottom:-12px;width:min(180px,42%);height:3px;border-radius:99px;
+      background:linear-gradient(90deg,transparent,#b16cff,#ff7ad9,transparent);
+      background-size:220% 100%;animation:titleLine 3.2s linear infinite;
+      box-shadow:0 0 16px rgba(177,108,255,.35);
+    }
+    .hero-copy,.lead{animation:softIn .9s .18s ease both}
+    .hero-actions,.top-actions{animation:softIn .8s .26s ease both}
+
+    .hero-panel,.quick-card,.mini-panel,.steps,.code-card,.bottom-cta,.card{
+      transform-style:preserve-3d;will-change:transform;
+    }
+    .hero-panel,.quick-card,.code-card,.bottom-cta,.card{
+      transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease;
+    }
+    .hero-panel:hover,.quick-card:hover,.code-card:hover,.bottom-cta:hover,.card:hover{
+      border-color:rgba(212,173,255,.26);
+      box-shadow:0 24px 70px rgba(0,0,0,.46),0 0 34px rgba(141,70,242,.08);
+    }
+    .mini-panel{animation:miniFloat 5s ease-in-out infinite}
+    .mini-panel:nth-child(2){animation-delay:.45s}
+    .mini-panel:nth-child(3){animation-delay:.9s}
+
+    .button{isolation:isolate}
+    .button::after{
+      content:"";position:absolute;inset:0;border-radius:inherit;z-index:-1;opacity:0;
+      background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.18),transparent 42%);
+      transition:opacity .2s ease;
+    }
+    .button:hover::after{opacity:1}
+    .button.primary{animation:primaryBreath 3.4s ease-in-out infinite}
+
+    .warning{animation:warningFloat 5.5s ease-in-out infinite}
+    .step-number{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+    .step:hover .step-number{
+      transform:rotate(-5deg) scale(1.08);
+      border-color:rgba(212,173,255,.36);
+      box-shadow:0 0 22px rgba(177,108,255,.16),inset 0 1px 0 rgba(255,255,255,.06);
+    }
+    .code-card textarea{transition:box-shadow .25s ease,background .25s ease}
+    .code-card:hover textarea{box-shadow:inset 0 0 55px rgba(141,70,242,.035);background:#08060e}
+
+    .fx::before{animation:spinSpiral 18s linear infinite,spiralPulse 6s ease-in-out infinite}
+    .fx::after{animation:floatGlow 8s ease-in-out infinite,glowDrift 13s ease-in-out infinite alternate}
+
+    @keyframes particleRise{
+      0%{transform:translate3d(0,0,0) scale(.5);opacity:0}
+      12%{opacity:.65}
+      75%{opacity:.32}
+      100%{transform:translate3d(var(--drift),-115vh,0) scale(1.35);opacity:0}
+    }
+    @keyframes headerDrop{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes titleIn{from{opacity:0;transform:translateY(22px);filter:blur(6px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+    @keyframes softIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes titleLine{0%{background-position:0% 50%}100%{background-position:220% 50%}}
+    @keyframes miniFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    @keyframes primaryBreath{0%,100%{filter:saturate(1);box-shadow:0 12px 28px rgba(141,70,242,.32),inset 0 1px 0 rgba(255,255,255,.35)}50%{filter:saturate(1.12);box-shadow:0 14px 35px rgba(141,70,242,.44),inset 0 1px 0 rgba(255,255,255,.38)}}
+    @keyframes warningFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+    @keyframes spiralPulse{0%,100%{opacity:.56;filter:blur(2px) saturate(1)}50%{opacity:.82;filter:blur(1px) saturate(1.25)}}
+    @keyframes glowDrift{0%{transform:translate3d(-2%,0,0) scale(1)}100%{transform:translate3d(2%,-2%,0) scale(1.06)}}
+
+    @media (prefers-reduced-motion:reduce){
+      .particle,.cursor-glow{display:none!important}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="fx" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="particles" aria-hidden="true">
+    <i class="particle" style="left:7%;--dur:15s;--delay:-3s;--drift:45px"></i><i class="particle" style="left:15%;--dur:20s;--delay:-11s;--drift:-30px"></i><i class="particle" style="left:24%;--dur:17s;--delay:-7s;--drift:55px"></i><i class="particle" style="left:34%;--dur:22s;--delay:-16s;--drift:-42px"></i><i class="particle" style="left:46%;--dur:18s;--delay:-9s;--drift:36px"></i><i class="particle" style="left:57%;--dur:23s;--delay:-14s;--drift:-52px"></i><i class="particle" style="left:68%;--dur:16s;--delay:-5s;--drift:40px"></i><i class="particle" style="left:77%;--dur:21s;--delay:-13s;--drift:-34px"></i><i class="particle" style="left:87%;--dur:19s;--delay:-8s;--drift:58px"></i><i class="particle" style="left:94%;--dur:24s;--delay:-19s;--drift:-46px"></i>
+  </div>
+  <header><div class="shell topbar"><a class="brand" href="index.html">Galactic Launcher<small>Browser Minecraft guide</small></a><a class="button" href="index.html">Back to Home</a></div></header>
+  <main class="shell">
+    <div class="eyebrow">Credits</div>
+    <h1>Credits.</h1>
+    <p class="lead">People behind the setup and discovery used for this launcher page.</p>
+    <div class="card">
+      <h2><span class="rainbow-name">Jake</span> - Found the bypass</h2>
+      <p>Credit for finding the method used in this guide.</p>
+    </div>
+  </main>
+  <footer>Galactic Launcher • Credits</footer>
+  <script>
+
+    // Extra visual animation layer
+    const progressBar = document.querySelector('.scroll-progress');
+    const cursorGlow = document.querySelector('.cursor-glow');
+
+    function updateProgress(){
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = max > 0 ? (window.scrollY / max) * 100 : 0;
+      if (progressBar) progressBar.style.width = pct + '%';
+    }
+    updateProgress();
+    addEventListener('scroll', updateProgress, {passive:true});
+
+    if (cursorGlow && matchMedia('(pointer:fine)').matches) {
+      let tx = innerWidth / 2, ty = innerHeight / 2, x = tx, y = ty;
+      addEventListener('pointermove', e => { tx = e.clientX; ty = e.clientY; }, {passive:true});
+      const follow = () => {
+        x += (tx - x) * .11; y += (ty - y) * .11;
+        cursorGlow.style.transform = `translate(${x - 180}px, ${y - 180}px)`;
+        requestAnimationFrame(follow);
+      };
+      follow();
+    }
+
+    document.querySelectorAll('.button').forEach(btn => {
+      btn.addEventListener('pointermove', e => {
+        const r = btn.getBoundingClientRect();
+        btn.style.setProperty('--mx', ((e.clientX-r.left)/r.width*100)+'%');
+        btn.style.setProperty('--my', ((e.clientY-r.top)/r.height*100)+'%');
+      });
+    });
+
+    if (matchMedia('(pointer:fine)').matches && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.hero-panel,.quick-card,.code-card,.bottom-cta,.card').forEach(card => {
+        card.addEventListener('pointermove', e => {
+          const r = card.getBoundingClientRect();
+          const rx = ((e.clientY-r.top)/r.height-.5) * -2.3;
+          const ry = ((e.clientX-r.left)/r.width-.5) * 2.8;
+          card.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-2px)`;
+        });
+        card.addEventListener('pointerleave', () => card.style.transform = '');
+      });
+    }
+
+  </script>
+</body>
+</html>
